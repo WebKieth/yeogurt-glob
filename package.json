@@ -1,15 +1,15 @@
 {
-  "name": "yeogurt-glob",
-  "version": "0.0.1",
+  "name": "bem_front-stack",
+  "version": "0.4.2",
   "dependencies": {
-    "coffee-script": "^1.12.4",
-    "gulp-coffeescript": "0.0.10",
-    "gulp-pug": "^3.3.0",
-    "gulp-sass-glob": "^1.0.8",
     "jquery": "~2.2.0",
     "normalize.css": "~3.0.3"
   },
   "devDependencies": {
+    "coffee-script": "^1.12.4",
+    "gulp-coffeescript": "0.0.10",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass-glob": "^1.0.8",
     "autoprefixer": "~6.3.1",
     "browser-sync": "~2.13.0",
     "browserify": "~13.0.1",
@@ -31,6 +31,7 @@
     "gulp-notify": "~2.2.0",
     "gulp-plumber": "~1.0.1",
     "gulp-postcss": "~6.0.1",
+    "gulp-pugbem": "^1.1.9",
     "gulp-rename": "~1.2.2",
     "gulp-sass": "~2.1.1",
     "gulp-sourcemaps": "~1.6.0",

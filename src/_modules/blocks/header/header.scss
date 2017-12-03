@@ -1,0 +1,11 @@
+.header{
+	width: 100%;
+	padding: 12px 0;
+	&__plate{
+		@extend %plate;
+	}
+	&__title{
+		font-size: 24px;
+		text-align: center;
+	}
+}

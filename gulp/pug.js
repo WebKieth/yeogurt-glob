@@ -4,8 +4,10 @@ var fs = require('fs');
 var path = require('path');
 var foldero = require('foldero');
 var pug = require('gulp-pug');
+var pugbem = require('gulp-pugbem');
+pugbem.e = '__';
+pugbem.m = '--';
 var yaml = require('js-yaml');
-console.log(pug);
 module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) {
   var dirs = config.directories;
   var dest = path.join(taskTarget);
@@ -53,8 +55,9 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
       '!' + path.join(dirs.source, '{**/\_*,**/\_*/**}')
     ])
     .pipe(plugins.changed(dest))
-    // .pipe(plugins.plumber())
+    .pipe(plugins.plumber())
     .pipe(plugins.pug({
+      plugins: [pugbem],
       pretty: true,
       locals: {
         config: config,

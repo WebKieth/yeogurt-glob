@@ -1,7 +1,7 @@
-var header;
+var callmodule;
 
-header = require('../_modules/header/header');
+callmodule = require('./functions/callmodule');
 
-$(document).ready(function() {
-  return new header();
+document.addEventListener("DOMContentLoaded", function() {
+  return new callmodule();
 });
