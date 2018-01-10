@@ -6,6 +6,8 @@ var browserSyncLib = require('browser-sync');
 var pjson = require('./package.json');
 var minimist = require('minimist');
 var wrench = require('wrench');
+var dotenv = require('dotenv');
+dotenv.config();
 
 // Load all gulp plugins based on their names
 // EX: gulp-copy -> copy

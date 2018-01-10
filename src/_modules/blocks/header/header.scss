@@ -1,10 +1,13 @@
-.header{
+block(header){
 	width: 100%;
 	padding: 12px 0;
-	&__plate{
+	mod(orange){
+		background-color: orange;
+	}
+	elem(plate){
 		@extend %plate;
 	}
-	&__title{
+	elem(title){
 		font-size: 24px;
 		text-align: center;
 	}
