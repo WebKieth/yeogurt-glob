@@ -20,12 +20,6 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
         path.join(dirs.source, dirs.data, '**/*.{json,yaml,yml}')
       ], ['pug']);
 
-      //coffeescript compiling
-      gulp.watch([
-          path.join(dirs.source, dirs.modules, '**/*.coffee'),
-          path.join(dirs.source, dirs.scripts, '**/*.coffee')
-        ], ['coffee']);
-
       // Copy
       gulp.watch([
         path.join(dirs.source, '**/*'),

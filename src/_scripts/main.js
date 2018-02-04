@@ -1,7 +1,9 @@
-var callmodule;
+var Vue = require("vue/dist/vue.js");
+var vheader = require("../_modules/components/header/header.vue")
 
-callmodule = require('./functions/callmodule');
-
-document.addEventListener("DOMContentLoaded", function() {
-  return new callmodule();
+new Vue({
+	el: '#app',
+	components: {
+		vheader: vheader
+	}
 });

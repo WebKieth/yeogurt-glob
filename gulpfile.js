@@ -48,7 +48,6 @@ gulp.task('build', [
   'imagemin',
   'pug',
   'sass',
-  'coffee',
   'browserify'
 ]);
 
@@ -60,7 +59,6 @@ gulp.task('serve', [
   'sass',
   'browserify',
   'browserSync',
-  'coffee',
   'watch'
 ]);
 
