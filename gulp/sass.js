@@ -5,7 +5,7 @@ var autoprefixer = require('autoprefixer');
 var pobem = require('pobem');
 var gulpif = require('gulp-if');
 var sassGlob = require('gulp-sass-glob');
-
+var sassMobuleImporter = require("sass-module-importer");
 module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) {
   var dirs = config.directories;
   var entries = config.entries;
@@ -17,6 +17,7 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
       .pipe(plugins.plumber())
       .pipe(plugins.sourcemaps.init())
       .pipe(plugins.sass({
+        importer: sassMobuleImporter(),
         outputStyle: 'compressed',
         precision: 10,
       }))

@@ -46,6 +46,7 @@
     "pobem": "^1.1.2",
     "pug": "^2.0.0-beta11",
     "rimraf": "~2.5.0",
+    "sass-module-importer": "^1.4.0",
     "vinyl-buffer": "~1.0.0",
     "vinyl-source-stream": "~1.1.0",
     "watchify": "~3.7.0 ",
